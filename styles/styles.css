@@ -1,0 +1,520 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.icon {
+    height: 3rem;
+}
+
+.menu {
+    overflow: hidden;
+    color: #424475;
+    padding: 14px 16px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+}
+  
+.menu a {
+    font-size: 16px;
+    color: #424475;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #424475;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.menu a:hover, .subnav:hover .subnavbtn {
+    font-weight: bold;
+}
+  
+.subnav-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding-right: 50px;
+    background-color: #4c4e87;
+    width: 100%;
+    z-index: 1;
+}
+  
+.subnav-content a {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+  
+.subnav-content a:hover {
+    font-weight: bold;
+}
+  
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .icon {
+        height: 50px;
+        padding-bottom: 5px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        position: fixed;
+        box-sizing: border-box;
+    }
+
+    .menu {
+        overflow: hidden;
+        color: #424475;
+        padding: 14px 16px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 560px) {
+    .icon {
+        height: 30px;
+        padding-bottom: 5px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        position: fixed;
+        box-sizing: border-box;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+.homeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/ashramPhoto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 0 -15rem;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.quoteDiv {
+    width: auto;
+}
+
+.quote {
+    overflow: hidden;
+    color: #10494b;
+    border-right: .15em solid #57A2A5;
+    white-space: nowrap;
+    margin: 0 auto;
+    font-weight: 200;
+    font-size: 2rem;
+    letter-spacing: .15em;
+    font-family: 'Source Code Pro', monospace;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #57A2A5; }
+  }
+
+.presentationDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(180deg, rgba(147,150,203,0.7455357142857143) 0%, rgba(255,255,255,1) 10%);
+}
+
+.presentationTitle {
+    color:#424475
+}
+
+.presentationDescription {
+    width: 40%;
+    text-align: center;
+}
+
+.logo {
+    width: 7rem;
+    height: 7rem;
+    object-fit: scale-down;
+    
+}
+
+@media (max-width: 1024px) {
+    .homeDiv {
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    }
+
+    .presentationDiv {
+        height: 50vh;
+    }
+
+    .presentationTitle {
+        font-size: 24px;
+    }
+
+    .logo {
+        width: 6rem;
+        height: 6rem;
+        object-fit: scale-down;
+    }
+
+    .presentationDescription {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .homeDiv {
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    }
+
+    .presentationDiv {
+        height: 100vh;
+    }
+
+    .presentationTitle {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 5rem;
+        height: 5rem;
+        object-fit: scale-down;
+    }
+
+    .presentationDescription {
+        font-size: 14px;
+    }
+
+}
+
+.activitiesDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 5%;
+    width: 100%;
+    height: 80vh;
+}
+
+.eventCard {
+    height: 80%;
+    width: 26%;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.eventCard:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 #8586b1;
+}
+
+.eventImage {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cardTitle {
+    color: #424475;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .activitiesDiv {
+        display: flex;
+        flex-direction: column;
+        height: 1500px;
+        justify-content: space-around;
+    }
+    
+    .eventCard {
+        height: 420px;
+        width: 600px;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .activitiesDiv {
+        display: flex;
+        flex-direction: column;
+        height: 1500px;
+        justify-content: space-around;
+    }
+
+    .eventCard {
+        height: 420px;
+        width: 200px;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+}
+
+.mapSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.mapSectionText {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.map {
+    margin: 2rem;
+    border: none;
+    width: 600px;
+    height: 400px;
+}
+
+@media (max-width: 1024px) {
+    .map {
+        margin: 20px;
+        border: none;
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 560px) {
+    .map {
+        margin: 10px;
+        border: none;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid #424475;
+}
+
+/* About me styles */
+
+.aboutMeImage {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/* Contact styles */
+
+.mainDivContact {
+    position: relative;
+    top: 200px;
+    margin: 1rem 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #cbccdd;
+    border-radius: 10px;
+}
+
+.contactSubtitle {
+    margin: 0 0 1rem 3rem;
+    font-size: 36px;
+}
+
+.contactTitle {
+    margin: 1rem 0 0 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #424475;
+    background-color: transparent;
+}
+
+input[type=text]:focus {
+    background-color: #dbdbe7;
+    outline: none;
+    padding: 0.5rem;
+}
+
+input[type=submit] {
+    background-color: #dbdbe7;
+    outline: none;
+    padding: 0.5rem;
+    border: 2px solid #424475;
+    border-radius: 10px;
+    color: #424475;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+}
+
+input[type=submit]:hover {
+    background-color: #424475;
+    padding: 0.5rem;
+    color: white;
+}
+
+input[type=submit]:focus {
+    background-color: #424475;
+    box-shadow: inset 19px 19px 38px #383a63,
+    inset -19px -19px 38px #4c4e87;
+    color: white;
+}
+
+/* Courses styles */
+
+
+/* Sessions styles */
+
+
+
+/* Activities styles */
+
+.mainDivActivities {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.menuFloat {
+    position: fixed;
+    top: 25%;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.floatButton {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #424475;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#divClass, #divMeditation {
+    padding: 11% 10% 10% 20%;
+}
+
+.divActivitiesGrid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30% 30% 40%;
+    gap: 5%;
+    grid-template-areas:
+    "Content Content importantContent importantContent"
+    "Content Content importantContent importantContent"
+    "imagesAct imagesAct imagesAct imagesAct";
+}
+
+.content {
+    grid-area: Content;
+}
+
+.importantContent {
+    grid-area: importantContent;
+    background-color: #B2D5D7;
+    padding: 5%;
+}
+
+.imagesActDiv {
+    display: flex;
+    flex-direction: row;
+    grid-area: imagesAct;
+    max-height: 100%;
+    flex-wrap: nowrap;
+}
+
+.imageAct {
+    max-height: 100%;
+    object-fit: cover;
+    margin: 0 1%;
+}

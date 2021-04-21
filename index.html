@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Ashram</title>
+</head>
+
+<body>
+    <header class="headerDiv">
+        <nav>
+            <a href="./index.html" class="headerLogo">
+                <img src="./img/icon.png" alt="ícono Ashram" class="icon">
+            </a>
+            <div class="menu">
+                <div class="subnav">
+                    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="./aboutMe.html#ashramPresentation">¿Qué es Ashram?</a>
+                        <a href="./aboutMe.html#founderPresentation">Sobre la fundadora</a>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">Servicios<i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="./activities.html">Actividades</a>
+                        <a href="./courses.html">Cursos</a>
+                        <a href="./sessions.html">Sesiones</a>
+                    </div>
+                </div>
+                <a href="./contact.html" class="contactButton">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <container class="mainContainer">
+        <section class="homeDiv">
+            <div class="quoteDiv"><h3 class="quote">"Una frase inspiradora"</h3></div>
+        </section>
+        <section class="presentationDiv" id="presentation">
+            <img src="./img/logo.png" alt="Logo Ashram" class="logo">
+            <h2 class="presentationTitle">Tu espacio de crecimiento espiritual</h2>
+            <p class="presentationDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore placeat,
+                maxime architecto reiciendis consectetur earum eaque a alias nesciunt atque eligendi laudantium
+                veritatis dolores natus voluptatibus ea iste distinctio dignissimos.</p>
+        </section>
+        <section class="activitiesDiv" id="activities">
+            <div class="eventCard">
+                <img src="./img/evento1.jpg" alt="Imagen eventos" class="eventImage">
+                <h3 class="cardTitle">Actividades Grupales</h3>
+                <p>Descripción de los eventos que se realizan en Ashram</p>
+                <a href="./courses.html">Ver Más</a>
+            </div>
+            <div class="eventCard">
+                <img src="./img/evento2.jpg" alt="Imagen cursos" class="eventImage">
+                <h3 class="cardTitle">Cursos y formaciones</h3>
+                <p>Descripción de los cursos que se realizan en Ashram</p>
+                <a href="./courses.html">Ver Más</a>
+            </div>
+            <div class="eventCard">
+                <img src="./img/reiki.jpg" alt="Imagen sesiones" class="eventImage">
+                <h3 class="cardTitle">Sesiones individuales</h3>
+                <p>Descripción de las sesiones que se realizan en Ashram</p>
+                <a href="./courses.html">Ver Más</a>
+            </div>
+        </section>
+        <section class="mapSection">
+            <div class="mapSectionText">
+                <h3>¡Vení a conocernos!</h3>
+                <p>Nos encontramos en calle 9 n 1260, General Pico, La Pampa.</p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51869.973525894224!2d-63.753823999999994!3d-35.655492!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda10a54c5ee0368e!2sAshram!5e0!3m2!1ses-419!2sus!4v1618339146511!5m2!1ses-419!2sus"
+                allowfullscreen="" loading="lazy" class="map">
+            </iframe>
+        </section>
+    </container>
+    <footer>
+        <p>Made with love by Ani</p>
+    </footer>
+</body>
+
+</html>

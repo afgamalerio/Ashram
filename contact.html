@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Ashram</title>
+</head>
+<body>
+    <header class="headerDiv">
+        <nav>
+            <a href="./index.html" class="headerLogo">
+                <img src="./img/icon.png" alt="ícono Ashram" class="icon">
+            </a>
+            <div class="menu">
+                <div class="subnav">
+                    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="./aboutMe.html#ashramPresentation">¿Qué es Ashram?</a>
+                        <a href="./aboutMe.html#founderPresentation">Sobre la fundadora</a>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">Servicios<i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="./activities.html">Actividades</a>
+                        <a href="./courses.html">Cursos</a>
+                        <a href="./sessions.html">Sesiones</a>
+                    </div>
+                </div>
+                <a href="./contact.html" class="contactButton">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main class="mainDivContact">
+        <h3 class="contactTitle">¿Querés saber más?</h3>
+        <h2 class="contactSubtitle">¡Contactanos!</h2>
+        <section class="contact" id="contact">
+            <form class="formDiv">
+                <label for="fname">Nombre:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Email:</label>
+                <input type="text" id="lname" name="lname">
+                <label for="message">Mensaje:</label>
+                <input type="text" id="lname" name="lname">
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="true">
+                    <label for="newsletter"> Deseo recibir noticias sobre nuevos eventos.</label> 
+                </div>   
+                <label for="services">Elegí el servicio que te interesa:</label>
+                <select id="services" name="services">
+                <option value="yogaClass">Clase de Yoga</option>
+                <option value="yogaFormation">Formación profesional en Yoga</option>
+                <option value="meditation">Meditación grupal</option>
+                </select>
+                <input type="submit">
+            </form>
+            <iframe width="40%" height="315" src="https://www.youtube.com/embed/3ac7NYIaLBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </iframe>
+        </section>
+    </main>    
+</body>
+</html>
