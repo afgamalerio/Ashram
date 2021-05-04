@@ -1,0 +1,69 @@
+$base-font-size: 16px;
+$primary-color: #c9cbff;
+$secondary-color: #7fb9bc;
+$shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$background-color: #f9f9f9;
+
+
+.mainDivActivities {
+    width: 100%;
+    box-sizing: border-box;
+    .menuFloat {
+        display: flex;
+        flex-direction: column;
+        .menuFloat__btn {
+            top: 25%;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #424475;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            width: 14rem;
+            .menuFloat__btn--first {
+                position: fixed;
+            }
+            .menuFloat__btn--second{
+                position: fixed;
+                transform: translateY(4rem);
+            }
+        }
+    }
+    @media (max-width: 560px) {
+        .menuFloat {
+            align-items: center;
+            &__btn {
+                &--first {
+                    position: initial;
+                }
+                &--second {
+                    position: initial;
+                    transform: initial;
+                }
+            }
+        }
+    }
+    .information {
+        .activDiv {
+            padding: 5% 0 2% 0;
+            &__section {
+                border: 1px solid #c9cbff;
+                padding: 2%;
+                &--important {
+                    background-color: #b2d5d7;
+                    padding: 5%;
+                }
+            }
+            .gallery {
+                padding: 2% 0 5% 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                &__image {
+                    width: 6rem;
+                    height: 8rem;
+                }
+            }
+        }
+    }
+}

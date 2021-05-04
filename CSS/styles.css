@@ -142,7 +142,7 @@ body {
     height: 80vh;
 }
 
-.eventCard {
+.activitiesDiv__card {
     width: 30vw;
     height: 60vh;
     border-radius: 15px;
@@ -150,7 +150,7 @@ body {
     margin: 2vw;
 }
 
-.eventCard:hover {
+.activitiesDiv__card:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px 0 #8586b1;
 }
@@ -176,7 +176,7 @@ body {
         justify-content: space-around;
     }
     
-    .eventCard {
+    .activitiesDiv__card {
         height: 420px;
         width: 600px;
         border-radius: 10px;
@@ -192,7 +192,7 @@ body {
         justify-content: space-around;
     }
 
-    .eventCard {
+    .activitiesDiv__card {
         height: 420px;
         width: 200px;
         border-radius: 10px;
@@ -377,10 +377,6 @@ input[type=submit]:focus {
 
 .divActivitiesGrid {
     height: 50vh;
-}
-
-.content {
-    grid-area: Content;
 }
 
 .importantContent {

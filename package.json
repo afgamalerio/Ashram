@@ -1,0 +1,25 @@
+{
+  "name": "ashramapp",
+  "version": "1.0.0",
+  "description": "Yoga studio web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afgamalerio/Ashram.git"
+  },
+  "author": "Anahi Fernandez Gamalerio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afgamalerio/Ashram/issues"
+  },
+  "homepage": "https://github.com/afgamalerio/Ashram#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
