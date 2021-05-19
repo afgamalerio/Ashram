@@ -165,6 +165,10 @@ footer {
         .activities-container .card-container .card .card__content .card__content--title {
           font-size: 2rem;
           color: #424475; }
+        .activities-container .card-container .card .card__content .card__content--subtitle {
+          font-size: 1.2rem;
+          color: #424475;
+          margin-top: 1rem; }
         .activities-container .card-container .card .card__content .card__content--text {
           margin: 1rem 0;
           padding-right: 0.5rem;
@@ -182,74 +186,69 @@ footer {
           padding: 0.5rem 1.8rem;
           border-radius: 20px; }
 
-.mainDivContact {
-  position: relative;
-  top: 200px;
-  margin: 1rem 5rem;
-  padding: 1rem;
+.contact-container {
+  height: 100vh;
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: #cbccdd;
-  border-radius: 10px; }
-
-.contactSubtitle {
-  margin: 0 0 1rem 3rem;
-  font-size: 36px; }
-
-.contactTitle {
-  margin: 1rem 0 0 3rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 12px; }
-
-.contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 1rem; }
-
-.formDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 50%; }
-
-input[type=text] {
-  border: none;
-  border-bottom: 2px solid #424475;
-  background-color: transparent; }
-
-input[type=text]:focus {
-  background-color: #dbdbe7;
-  outline: none;
-  padding: 0.5rem; }
-
-input[type=submit] {
-  background-color: #dbdbe7;
-  outline: none;
-  padding: 0.5rem;
-  border: 2px solid #424475;
-  border-radius: 10px;
-  color: #424475;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
-  font-family: 'Nunito', sans-serif;
-  letter-spacing: 2px; }
-
-input[type=submit]:hover {
-  background-color: #424475;
-  padding: 0.5rem;
-  color: white; }
-
-input[type=submit]:focus {
-  background-color: #424475;
-  box-shadow: inset 19px 19px 38px #383a63, inset -19px -19px 38px #4c4e87;
-  color: white; }
+  align-items: center;
+  justify-content: center; }
+  .contact-container .form-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80vw;
+    height: 80vh; }
+    .contact-container .form-container .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 2rem;
+      background-color: #F4F5FF;
+      border-radius: 20px; }
+      .contact-container .form-container .form .form__title {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px; }
+      .contact-container .form-container .form .form__subtitle {
+        font-size: 36px; }
+      .contact-container .form-container .form .form__div {
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        justify-content: space-evenly; }
+        .contact-container .form-container .form .form__div input[type="text"] {
+          border: none;
+          border-bottom: 2px solid #424475;
+          background-color: transparent;
+          padding: 0.2rem; }
+        .contact-container .form-container .form .form__div input[type="text"]:focus {
+          background-color: #dbdbe7;
+          outline: none; }
+        .contact-container .form-container .form .form__div input[type="submit"] {
+          background-color: #dbdbe7;
+          outline: none;
+          padding: 0.5rem;
+          border: 2px solid #424475;
+          border-radius: 10px;
+          color: #424475;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: bold;
+          font-family: "Nunito", sans-serif;
+          letter-spacing: 2px; }
+        .contact-container .form-container .form .form__div input[type="submit"]:hover {
+          background-color: #424475;
+          padding: 0.5rem;
+          color: white; }
+        .contact-container .form-container .form .form__div input[type="submit"]:focus {
+          background-color: #424475;
+          box-shadow: inset 19px 19px 38px #383a63, inset -19px -19px 38px #4c4e87;
+          color: white; }
 
 body {
-  background-color: #FBFBFB; }
+  background-color: #ffffff; }
 
 .homeDiv {
   display: flex;
@@ -329,6 +328,12 @@ body {
     .activitiesDiv .activitiesDiv__card .cardTitle {
       color: #424475;
       font-size: 1.5rem; }
+    .activitiesDiv .activitiesDiv__card .activitiesDiv__card--button {
+      background-color: #424475;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1.8rem;
+      border-radius: 20px; }
 
 .mapSection {
   display: flex;

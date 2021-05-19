@@ -24,8 +24,8 @@
             <div class="subnav">
                 <button class="subnavbtn">About</button>
                 <div class="subnav-content">
-                    <a href="./about.html#about__ashram">¿Qué es Ashram?</a>
-                    <a href="./about.html#about__founder">Sobre la fundadora</a>
+                    <a href="./about.html#about-ashram">¿Qué es Ashram?</a>
+                    <a href="./about.html#about-founder">Sobre la fundadora</a>
                 </div>
             </div>
             <div class="subnav">
@@ -43,35 +43,43 @@
     </nav>
 
 
-    <main class="mainDivContact">
-        <h3 class="contactTitle">¿Querés saber más?</h3>
-        <h2 class="contactSubtitle">¡Contactanos!</h2>
-        <section class="contact" id="contact">
-            <form class="formDiv">
-                <label for="fname">Nombre:</label>
-                <input type="text" id="fname" name="fname">
-                <label for="lname">Email:</label>
-                <input type="text" id="lname" name="lname">
-                <label for="message">Mensaje:</label>
-                <input type="text" id="lname" name="lname">
-                <div>
-                    <input type="checkbox" id="newsletter" name="newsletter" value="true">
-                    <label for="newsletter"> Deseo recibir noticias sobre nuevos eventos.</label>
-                </div>
-                <label for="services">Elegí el servicio que te interesa:</label>
-                <select id="services" name="services">
-                    <option value="yogaClass">Clase de Yoga</option>
-                    <option value="yogaFormation">Formación profesional en Yoga</option>
-                    <option value="meditation">Meditación grupal</option>
-                </select>
-                <input type="submit">
-            </form>
-            <iframe width="40%" height="315" src="https://www.youtube.com/embed/3ac7NYIaLBI"
+    <main class="contact-container">
+
+        <section class="form-container">
+
+            <div class="form">
+
+                <h3 class="form__title">¿Querés saber más?</h3>
+                <h2 class="form__subtitle">¡Contactanos!</h2>
+                <form class="form__div">
+                    <label for="fname">Nombre:</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Email:</label>
+                    <input type="text" id="lname" name="lname">
+                    <label for="message">Mensaje:</label>
+                    <input type="text" id="lname" name="lname">
+                    <div>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="true">
+                        <label for="newsletter"> Deseo recibir noticias sobre nuevos eventos.</label>
+                    </div>
+                    <label for="services">Elegí el servicio que te interesa:</label>
+                    <select id="services" name="services">
+                        <option value="yogaClass">Clase de Yoga</option>
+                        <option value="yogaFormation">Formación profesional en Yoga</option>
+                        <option value="meditation">Meditación grupal</option>
+                    </select>
+                    <input type="submit">
+                </form>
+            </div>
+
+            <iframe width="50%" height="auto" src="https://www.youtube.com/embed/3ac7NYIaLBI"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </iframe>
+
         </section>
+
     </main>
     <footer class="footer container-fluid">
         <div class="col footer__information">
@@ -80,15 +88,6 @@
             <a href="./contact.html" class="footer__information--link">Contacto</a>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

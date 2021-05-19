@@ -105,6 +105,14 @@ body {
             color: #424475;
             font-size: 1.5rem;
         }
+
+        .activitiesDiv__card--button {
+            background-color: $primary-color-dark;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1.8rem;
+            border-radius: 20px;
+        }
     }
 }
 
