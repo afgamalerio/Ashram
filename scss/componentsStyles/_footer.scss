@@ -1,0 +1,37 @@
+@import '../colors';
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #424475;
+    height: 30vh;
+    
+    .footer__information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 20%;
+        align-content: center;
+
+        .footer__information--title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer__information--text {
+            color: white;            
+        }
+
+        .footer__information--link {
+            text-decoration: none;
+            background-color: $primary-color;
+            color: #424475;
+            padding: 10px;
+        }
+    }
+}

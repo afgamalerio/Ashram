@@ -1,0 +1,31 @@
+//main styles
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Source+Code+Pro:wght@200&display=swap');
+
+
+// components
+
+@import 'componentsStyles/navbar';
+@import 'componentsStyles/footer';
+
+// pages
+
+@import 'pagesStyles/about';
+@import 'pagesStyles/activities';
+@import 'pagesStyles/contact';
+@import 'pagesStyles/courses';
+@import 'pagesStyles/home';
+@import 'pagesStyles/sessions';
+
+

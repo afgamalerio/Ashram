@@ -1,0 +1,92 @@
+@import '../colors';
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: white;
+    z-index: 10;
+
+    .icon {
+        height: auto;
+        width: 10rem;
+    }
+
+
+    .menu {
+        
+        overflow: hidden;
+        color: $primary-color-dark;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+
+        a {
+            font-size: 16px;
+            color: $primary-color-dark;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+
+        .subnav {
+
+            .subnavbtn {
+                
+                font-size: 16px;  
+                border: none;
+                outline: none;
+                color: $primary-color-dark;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+    
+            }
+
+            &:hover {
+                .subnav-content {
+                    display: block;
+                }
+
+                .subnavbtn {
+                    font-weight: bold;
+                }
+            }
+    
+            .subnav-content {
+                display: none;
+                position: absolute;
+                right: 0;
+                padding-right: 50px;
+                background-color: $primary-color-dark;
+                width: 100%;
+                z-index: 1;
+
+                a {
+                    float: right;
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover {
+                        font-weight: bold;
+                    }
+
+                }
+    
+            }
+    
+        }
+
+    }    
+
+}

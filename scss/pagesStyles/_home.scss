@@ -1,0 +1,139 @@
+@import '../colors';
+
+
+body {
+    background-color: $background;
+}
+
+.homeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/ashramPhoto.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -15rem;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+
+    .quote {
+        overflow: hidden;
+        color: $secondary-color-dark;
+        border-right: .15em solid $secondary-color;
+        white-space: nowrap;
+        margin: 0 auto;
+        font-weight: 200;
+        font-size: 2rem;
+        letter-spacing: .15em;
+        font-family: 'Source Code Pro', monospace;
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+    }
+    
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: $secondary-color; }
+    }
+
+}
+
+.presentationDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(180deg, rgba(147,150,203,0.2) 0%, rgba(255,255,255,1) 10%);
+
+    .logo {
+        width: 7rem;
+        height: 7rem;
+        object-fit: scale-down;
+        
+    }
+
+    .presentationTitle {
+        color:#424475
+    }
+
+    .presentationDescription {
+        width: 40%;
+        text-align: center;
+    }
+    
+
+}
+
+
+.activitiesDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 5%;
+    width: 100%;
+    height: 80vh;
+
+    .activitiesDiv__card {
+        width: 30vw;
+        height: 60vh;
+        border-radius: 15px;
+        padding: 1rem;
+        margin: 2vw;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: $shadow;
+        }
+
+        .eventImage {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .cardTitle {
+            color: #424475;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+.mapSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .mapSection__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 200px;
+        margin-right: 20px;
+    }
+
+    .mapSection__map {
+        margin: 2rem;
+        border: none;
+        width: 600px;
+        height: 400px;
+    }
+
+}
+
+
+
+
