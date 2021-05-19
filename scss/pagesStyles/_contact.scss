@@ -1,0 +1,78 @@
+@import '../colors';
+
+.mainDivContact {
+    position: relative;
+    top: 200px;
+    margin: 1rem 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #cbccdd;
+    border-radius: 10px;
+}
+
+.contactSubtitle {
+    margin: 0 0 1rem 3rem;
+    font-size: 36px;
+}
+
+.contactTitle {
+    margin: 1rem 0 0 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #424475;
+    background-color: transparent;
+}
+
+input[type=text]:focus {
+    background-color: #dbdbe7;
+    outline: none;
+    padding: 0.5rem;
+}
+
+input[type=submit] {
+    background-color: #dbdbe7;
+    outline: none;
+    padding: 0.5rem;
+    border: 2px solid #424475;
+    border-radius: 10px;
+    color: #424475;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+}
+
+input[type=submit]:hover {
+    background-color: #424475;
+    padding: 0.5rem;
+    color: white;
+}
+
+input[type=submit]:focus {
+    background-color: #424475;
+    box-shadow: inset 19px 19px 38px #383a63,
+    inset -19px -19px 38px #4c4e87;
+    color: white;
+}
