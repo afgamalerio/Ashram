@@ -1,81 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Source+Code+Pro:wght@200&display=swap");
 body {
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px; }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-nav {
-  width: 100%;
+header {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 1rem 2rem;
   position: fixed;
   box-sizing: border-box;
   background-color: white;
   z-index: 10; }
-  nav .icon {
+  @media (max-width: 600px) {
+    header {
+      padding: 0.5rem 1rem; } }
+  header .icon {
     height: auto;
     width: 10rem; }
-  nav .menu {
+  header .menu {
     overflow: hidden;
     color: #424475;
-    font-size: 16px;
+    font-size: 1em;
     display: flex;
     flex-direction: row; }
-    nav .menu a {
-      font-size: 16px;
+    header .menu a {
+      font-size: 1em;
       color: #424475;
       text-align: center;
-      padding: 14px 16px;
+      padding: 1em;
       text-decoration: none; }
-      nav .menu a:hover {
+      header .menu a:hover {
         font-weight: bold; }
-    nav .menu .subnav .subnavbtn {
-      font-size: 16px;
+    header .menu .subnav .subnavbtn {
+      font-size: 1em;
       border: none;
       outline: none;
       color: #424475;
-      padding: 14px 16px;
+      padding: 1em;
       background-color: inherit;
       font-family: inherit;
       margin: 0; }
-    nav .menu .subnav:hover .subnav-content {
+    header .menu .subnav:hover .subnav-content {
       display: block; }
-    nav .menu .subnav:hover .subnavbtn {
+    header .menu .subnav:hover .subnavbtn {
       font-weight: bold; }
-    nav .menu .subnav .subnav-content {
+    header .menu .subnav .subnav-content {
       display: none;
       position: absolute;
       right: 0;
-      padding-right: 50px;
+      padding-right: 1em;
       background-color: #424475;
       width: 100%;
       z-index: 1; }
-      nav .menu .subnav .subnav-content a {
+      header .menu .subnav .subnav-content a {
         float: right;
         color: white;
         text-decoration: none; }
-        nav .menu .subnav .subnav-content a:hover {
+        header .menu .subnav .subnav-content a:hover {
           font-weight: bold; }
+    header .menu .subnavbtn {
+      font-size: 1em; }
+  @media (min-width: 600px) {
+    header .btn-pluss-wrapper {
+      display: none; } }
+  @media (max-width: 600px) {
+    header .icon {
+      height: auto;
+      width: 5rem; }
+    header .menu {
+      font-size: 12px; } }
 
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #424475;
-  height: 30vh; }
+  background-color: #424475; }
   footer .footer__information {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 20%;
     align-content: center; }
     footer .footer__information .footer__information--title {
       font-size: 2rem;
@@ -86,9 +99,49 @@ footer {
       color: white; }
     footer .footer__information .footer__information--link {
       text-decoration: none;
-      background-color: #C9CBFF;
-      color: #424475;
-      padding: 10px; }
+      color: #F4F5FF;
+      padding: 1rem;
+      text-decoration: none; }
+      footer .footer__information .footer__information--link span {
+        font-weight: 100;
+        transition: all 0.5s;
+        border-bottom: 1px solid; }
+      footer .footer__information .footer__information--link span:nth-child(2) {
+        transition-delay: 0.1s; }
+      footer .footer__information .footer__information--link span:nth-child(3) {
+        transition-delay: 0.2s; }
+      footer .footer__information .footer__information--link span:nth-child(4) {
+        transition-delay: 0.3s; }
+      footer .footer__information .footer__information--link span:nth-child(5) {
+        transition-delay: 0.1s; }
+      footer .footer__information .footer__information--link span:nth-child(6) {
+        transition-delay: 0.2s; }
+      footer .footer__information .footer__information--link span:nth-child(7) {
+        transition-delay: 0.3s; }
+      footer .footer__information .footer__information--link span:nth-child(8) {
+        transition-delay: 0.3s; }
+      footer .footer__information .footer__information--link:hover span {
+        font-weight: 700; }
+      footer .footer__information .footer__information--link:hover span:nth-child(8) {
+        transition-delay: 0.3s; }
+      footer .footer__information .footer__information--link:hover span:nth-child(7) {
+        transition-delay: 0.3s; }
+      footer .footer__information .footer__information--link:hover span:nth-child(6) {
+        transition-delay: 0.3s; }
+      footer .footer__information .footer__information--link:hover span:nth-child(5) {
+        transition-delay: 0.3s; }
+      footer .footer__information .footer__information--link:hover span:nth-child(4) {
+        transition-delay: 0.3s; }
+      footer .footer__information .footer__information--link:hover span:nth-child(3) {
+        transition-delay: 0.2s; }
+      footer .footer__information .footer__information--link:hover span:nth-child(2) {
+        transition-delay: 0.1s; }
+      footer .footer__information .footer__information--link:hover span:nth-child(1) {
+        transition-delay: 0s; }
+      footer .footer__information .footer__information--link.hover-shadow:hover {
+        text-shadow: 1px 1px 0px #ddd, 2px 2px 0px #ddd, 3px 3px 0px #ddd; }
+      footer .footer__information .footer__information--link.hover-color:hover {
+        border-color: darkmagenta; }
 
 .about-container {
   background-color: white;
@@ -255,10 +308,11 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url(../img/ashramPhoto.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 0 -15rem;
+  background-position: center;
   background-size: cover;
-  height: 80vh;
+  height: 90vh;
   width: 100%; }
   .homeDiv .quote {
     overflow: hidden;
@@ -266,10 +320,10 @@ body {
     border-right: 0.15em solid #7FB9BC;
     white-space: nowrap;
     margin: 0 auto;
-    font-weight: 200;
-    font-size: 2rem;
-    letter-spacing: .15em;
-    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
+    font-family: "Source Code Pro", monospace;
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
 
 @keyframes typing {
@@ -279,19 +333,26 @@ body {
     width: 100%; } }
 
 @keyframes blink-caret {
-  from, to {
+  from,
+  to {
     border-color: transparent; }
   50% {
     border-color: #7FB9BC; } }
+  @media (max-width: 600px) {
+    .homeDiv .quote {
+      font-size: 0.7rem; } }
 
 .presentationDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 8rem;
   width: 100%;
-  height: 80vh;
   background: linear-gradient(180deg, rgba(147, 150, 203, 0.2) 0%, white 10%); }
+  @media (max-width: 600px) {
+    .presentationDiv {
+      padding: 0 1rem; } }
   .presentationDiv .logo {
     width: 7rem;
     height: 7rem;
@@ -299,29 +360,24 @@ body {
   .presentationDiv .presentationTitle {
     color: #424475; }
   .presentationDiv .presentationDescription {
-    width: 40%;
     text-align: center; }
 
 .activitiesDiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  box-sizing: border-box;
-  padding: 0 5%;
-  width: 100%;
-  height: 80vh; }
+  padding: 0 8rem; }
+  @media (max-width: 600px) {
+    .activitiesDiv {
+      padding: 1rem; } }
   .activitiesDiv .activitiesDiv__card {
-    width: 30vw;
-    height: 60vh;
     border-radius: 15px;
     padding: 1rem;
-    margin: 2vw; }
-    .activitiesDiv .activitiesDiv__card:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    @media (max-width: 600px) {
+      .activitiesDiv .activitiesDiv__card {
+        box-shadow: inherit;
+        margin: 1rem; } }
     .activitiesDiv .activitiesDiv__card .eventImage {
       width: 100%;
-      height: 50%;
+      height: 15rem;
       object-fit: cover;
       border-radius: 10px;
       margin-bottom: 20px; }
@@ -340,7 +396,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px; }
+  padding: 3rem; }
   .mapSection .mapSection__text {
     display: flex;
     flex-direction: column;

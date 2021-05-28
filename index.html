@@ -6,49 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="yoga, actividades, holistico, clases, meditacion, radiestesia, cursos, formaciones">
-    <meta name="description" content="Ashram es un punto de encuentro y formación para aficionados a las artes holísticas como el yoga y la meditación. Se realizan actividades grupales, cursos y sesiones individuales de sanación.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta name="description"
+        content="Ashram es un punto de encuentro y formación para aficionados a las artes holísticas como el yoga y la meditación. Se realizan actividades grupales, cursos y sesiones individuales de sanación.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Ashram</title>
 </head>
 
 <body>
     <header>
-        
-        <nav>
-            
-            <a href="./index.html">
-                <img src="./img/icon.png" alt="Icono Ashram" class="icon">
-            </a>
 
-            <div class="menu">
-                
-                <div class="subnav">
-                    <button class="subnavbtn">About</button>
-                    <div class="subnav-content">
-                        <a href="./about.html#about__ashram">¿Qué es Ashram?</a>
-                        <a href="./about.html#about__founder">Sobre la fundadora</a>
-                    </div>
-                </div>
-                <div class="subnav">
-                    <button class="subnavbtn">Servicios</button>
-                    <div class="subnav-content">
-                        <a href="./activities.html">Actividades</a>
-                        <a href="./courses.html">Cursos</a>
-                        <a href="./sessions.html">Sesiones</a>
-                    </div>
-                </div>
-                <a href="./contact.html" class="subnavbtn">Contacto</a>
+        <a href="./index.html">
+            <img src="./img/icon.png" alt="Icono Ashram" class="icon">
+        </a>
 
+        <nav class="menu">
+
+            <div class="subnav">
+                <button class="subnavbtn">About</button>
+                <div class="subnav-content">
+                    <a href="./about.html#about__ashram">¿Qué es Ashram?</a>
+                    <a href="./about.html#about__founder">Sobre la fundadora</a>
+                </div>
             </div>
-            
+            <div class="subnav">
+                <button class="subnavbtn">Servicios</button>
+                <div class="subnav-content">
+                    <a href="./activities.html">Actividades</a>
+                    <a href="./courses.html">Cursos</a>
+                    <a href="./sessions.html">Sesiones</a>
+                </div>
+            </div>
+            <a href="./contact.html" class="subnavbtn">Contacto</a>
+
         </nav>
 
     </header>
-    
+
     <main class="mainContainer">
 
-    <!--sección inicial con imagen-->
+        <!--sección inicial con imagen-->
 
         <section class="container-fluid homeDiv">
             <div class="quoteDiv">
@@ -56,7 +54,7 @@
             </div>
         </section>
 
-    <!--sección de presentación con texto descriptivo-->
+        <!--sección de presentación con texto descriptivo-->
 
         <section class="container-fluid presentationDiv" id="presentation">
             <img src="./img/logo.png" alt="Logo Ashram" class="logo">
@@ -66,23 +64,23 @@
                 veritatis dolores natus voluptatibus ea iste distinctio dignissimos.</p>
         </section>
 
-    <!--sección de actividades con cards-->
+        <!--sección de actividades con cards-->
 
-        <section class="container-fluid activitiesDiv" id="activities">
-            <div class="row">
-                <div class="col activitiesDiv__card">
+        <section class="container-fluid activitiesDiv">
+            <div class="row justify-content-around align-items-center">
+                <div class="col-12 col-md-3 activitiesDiv__card">
                     <img src="./img/evento1.jpg" alt="Imagen actividades" class="eventImage">
                     <h3 class="cardTitle">Actividades Grupales</h3>
                     <p>Descripción de los eventos que se realizan en Ashram</p>
                     <a href="./activities.html" class="activitiesDiv__card--button">Ver Más</a>
                 </div>
-                <div class="col activitiesDiv__card">
+                <div class="col-12 col-md-3 activitiesDiv__card">
                     <img src="./img/evento2.jpg" alt="Imagen cursos" class="eventImage">
                     <h3 class="cardTitle">Cursos y formaciones</h3>
                     <p>Descripción de los cursos que se realizan en Ashram</p>
                     <a href="./courses.html" class="activitiesDiv__card--button">Ver Más</a>
                 </div>
-                <div class="col activitiesDiv__card">
+                <div class="col-12 col-md-3 activitiesDiv__card">
                     <img src="./img/reiki.jpg" alt="Imagen sesiones" class="eventImage">
                     <h3 class="cardTitle">Sesiones individuales</h3>
                     <p>Descripción de las sesiones que se realizan en Ashram</p>
@@ -91,7 +89,7 @@
             </div>
         </section>
 
-    <!--sección de ubicación con mapa-->
+        <!--sección de ubicación con mapa-->
 
         <section class="container-fluid mapSection">
             <div class="row">
@@ -108,13 +106,13 @@
 
     </main>
 
-        <footer class="container-fluid footer">
-            <div class="col footer__information">
-                <p class="footer__information--title">¿Tenés dudas? ¡Escribinos!</p>
-                <p class="footer__information--text">Estamos para ayudarte</p>
-                <a href="./contact.html" class="footer__information--link">Contacto</a>
-            </div>
-        </footer>
+    <footer class="container-fluid footer">
+        <div class="col footer__information">
+            <p class="footer__information--title">¿Tenés dudas? ¡Escribinos!</p>
+            <p class="footer__information--text">Estamos para ayudarte</p>
+            <a href="./contact.html" class="footer__information--link hover-shadow hover-color"><span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span><span>o</span></a>
+        </div>
+    </footer>
 
 </body>
 

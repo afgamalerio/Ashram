@@ -1,7 +1,12 @@
 //main styles
 
+@import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Source+Code+Pro:wght@200&display=swap');
+
+
 body {
     font-family: 'Nunito', sans-serif;
+    font-size: 16px;
 }
 
 * {
@@ -9,10 +14,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-@import 'colors';
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Source+Code+Pro:wght@200&display=swap');
-
 
 // components
 
