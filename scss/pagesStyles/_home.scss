@@ -8,12 +8,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/ashramPhoto.jpg);
+    background-image: url(../../img/ashramPhoto.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 99vh;
     width: 100%;
 
     .quote {
@@ -55,31 +55,43 @@ body {
     }
 }
 
-.presentationDiv {
+.presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
     padding: 8rem;
     width: 100%;
     background: linear-gradient(180deg, rgba(147, 150, 203, 0.2) 0%, rgba(255, 255, 255, 1) 10%);
 
     @media (max-width: 600px) {
-        padding: 0 1rem;
+        padding: 3em 2rem;
+        font-size: 14px;
     }
 
-    .logo {
-        width: 7rem;
-        height: 7rem;
+    .presentation__logo {
+        width: 7em;
+        height: 7em;
+        padding-bottom: 1em;
         object-fit: scale-down;
     }
 
-    .presentationTitle {
+    .presentation__title {
         color: #424475;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
     }
 
-    .presentationDescription {
+    .presentation__description {
         text-align: center;
+        font-size: 1em;
+
+        .presentation__description--span {
+            color: $primary-color-dark;
+            font-weight: bold;
+        }
     }
 }
 
@@ -114,35 +126,33 @@ body {
         }
 
         .activitiesDiv__card--button {
+            display: block;
+            text-align: center;
             background-color: $primary-color-dark;
             color: white;
             text-decoration: none;
-            padding: 0.5rem 1.8rem;
+            padding: 0.5rem;
             border-radius: 20px;
+
+            &:hover {
+                box-shadow: $shadow;
+                transition: all 200ms linear;
+            }
         }
     }
 }
 
 .mapSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
+    padding: 5em 3em;
+    font-size: 16px;
 
     .mapSection__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         flex-wrap: wrap;
-        width: 200px;
-        margin-right: 20px;
     }
 
     .mapSection__map {
-        margin: 2rem;
         border: none;
-        width: 600px;
-        height: 400px;
+        width: 100%;
+        height: 25em;
     }
 }

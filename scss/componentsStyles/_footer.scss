@@ -1,104 +1,104 @@
 @import "../colors";
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #424475;
+    background: linear-gradient(to bottom, rgba(66, 68, 117, 0.7), rgba(66, 68, 117, 0.7)), url("../../img/ashram.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    padding: 1em 2em;
+    color: white;
+
+    @media (max-width: 600px) {
+        text-align: center;
+        font-size: 14px;
+    }
 
     .footer__information {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-content: center;
-
-        .footer__information--title {
-            font-size: 2rem;
-            font-weight: bold;
-            color: white;
-            margin-bottom: 0.5rem;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 0 2em;
+        .footer__information--icon {
+            width: 10em;
+            margin: 1em;
         }
 
         .footer__information--text {
-            color: white;
+            margin: 1em;
+        }
+    }
+
+    .footer__contactinfo {
+        text-align: center;
+        padding: 0 2em;
+        .footer__contactinfo--title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
         }
 
-        .footer__information--link {
-            text-decoration: none;
-            color: $primary-color-light;
-            padding: 1rem;
-            text-decoration: none;
+        .footer__contactinfo--text {
+            font-size: 1em;
+            margin-bottom: 1.5em;
+        }
 
-            span {
-                font-weight: 100;
-                transition: all 0.5s;
-                border-bottom: 1px solid;
-            }
-            span:nth-child(2) {
-                transition-delay: 0.1s;
-            }
-            span:nth-child(3) {
-                transition-delay: 0.2s;
-            }
-            span:nth-child(4) {
-                transition-delay: 0.3s;
-            }
-            span:nth-child(5) {
-                transition-delay: 0.1s;
-            }
-            span:nth-child(6) {
-                transition-delay: 0.2s;
-            }
-            span:nth-child(7) {
-                transition-delay: 0.3s;
-            }
-            span:nth-child(8) {
-                transition-delay: 0.3s;
-            }
+        .footer__contactinfo--button {
+            border: 1px solid white;
+            border-radius: 25px;
+            text-decoration: none;
+            padding: 0.5em 1.5em;
+            color: white;
+
             &:hover {
-                span {
-                    font-weight: 700;
-                }
-                span:nth-child(8) {
-                    transition-delay: 0.3s;
-                }
-                span:nth-child(7) {
-                    transition-delay: 0.3s;
-                }
-                span:nth-child(6) {
-                    transition-delay: 0.3s;
-                }
-                span:nth-child(5) {
-                    transition-delay: 0.3s;
-                }
-                span:nth-child(4) {
-                    transition-delay: 0.3s;
-                }
-                span:nth-child(3) {
-                    transition-delay: 0.2s;
-                }
-                span:nth-child(2) {
-                    transition-delay: 0.1s;
-                }
-                span:nth-child(1) {
-                    transition-delay: 0s;
-                }
+                background-color: rgba(201, 203, 255, 0.3);
+                transition: all 500ms linear;
+            }
+        }
+
+        .footer__contactinfo--social {
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            margin-top: 2em;
+
+            p {
+                margin: 0.4em 0;
             }
 
-            &.hover-shadow {
-                &:hover {
-                    $color: #ddd;
-                    text-shadow: 1px 1px 0px $color, 2px 2px 0px $color, 3px 3px 0px $color;
+            a {
+                color: $primary-color-light;
+                text-decoration: none;
+
+                .bi {
+                    width: 1.5em;
+                    margin: 0 0.8em;
+
+                    &:hover {
+                        transform: scale(1.2);
+                        transition: all 500ms linear;
+                    }
                 }
             }
-            &.hover-color {
-                &:hover {
-                    $color: #ddd;
-                    //color: darkmagenta;
-                    border-color: darkmagenta;
-                }
+        }
+    }
+}
+
+.copyright {
+    background-color: $primary-color-dark;
+    font-size: 0.8em;
+    padding-top: 0.5em;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    .copyright__text {
+        margin: 0;
+
+        .copyright__link {
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                transition: all 1000ms linear;
+                letter-spacing: 2px;
             }
         }
     }
