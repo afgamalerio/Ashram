@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Source+Code+Pro:wght@200&display=swap");
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 16px; }
 
 * {
@@ -68,19 +68,19 @@ header {
           font-weight: bold; }
     header .menu .subnavbtn {
       font-size: 1em; }
-  @media (min-width: 600px) {
-    header .btn-pluss-wrapper {
-      display: none; } }
-  @media (max-width: 600px) {
+  @media (max-width: 720px) {
     header .icon {
       height: auto;
       width: 5rem; }
     header .menu {
-      font-size: 12px; } }
+      font-size: 16px; } }
+  @media (max-width: 480px) {
+    header .menu {
+      font-size: 14px; } }
 
 footer {
   background-color: #424475;
-  background: linear-gradient(to bottom, rgba(66, 68, 117, 0.7), rgba(66, 68, 117, 0.7)), url("img/ashram.jpg");
+  background: linear-gradient(to bottom, rgba(66, 68, 117, 0.7), rgba(66, 68, 117, 0.7)), url("../../img/ashram.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,14 +162,31 @@ footer {
       height: 15rem;
       object-fit: cover;
       border-radius: 50%;
-      position: relative;
-      bottom: -5rem;
+      transform: translateY(4rem);
       border: 1rem solid white;
       z-index: 0; }
+      @media (max-width: 1240px) {
+        .about-container .about .about__image {
+          width: 12rem;
+          height: 12em;
+          transform: translateY(3rem);
+          border: 0.8rem solid white; } }
+      @media (max-width: 720px) {
+        .about-container .about .about__image {
+          width: 10rem;
+          height: 10em;
+          transform: translateY(2rem);
+          border: 0.6rem solid white; } }
     .about-container .about .about__content {
       background-color: #F4F5FF;
       padding: 5%;
       border-radius: 20px; }
+      @media (max-width: 1240px) {
+        .about-container .about .about__content {
+          padding-top: 4rem; } }
+      @media (max-width: 720px) {
+        .about-container .about .about__content {
+          padding-top: 3rem; } }
       .about-container .about .about__content .about__content--title {
         font-size: 2rem;
         color: #424475; }
@@ -185,42 +202,63 @@ footer {
 
 .activities-container {
   background-color: white;
-  padding: 10rem 5rem; }
-  .activities-container .activities-title {
-    font-size: 2.5rem;
-    color: #7FB9BC;
-    background-color: #D3F1F2;
-    padding: 1rem;
-    border-radius: 20px; }
+  padding: 10rem 1rem; }
+  @media (max-width: 600px) {
+    .activities-container {
+      padding: 5rem 0; } }
+  .activities-container .row {
+    margin: 0;
+    width: 100%; }
+    .activities-container .row .activities-title {
+      display: block;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+      text-align: center;
+      padding: 0.5rem;
+      color: white;
+      background-color: #424475;
+      line-height: 1.5rem; }
+      @media (max-width: 720px) {
+        .activities-container .row .activities-title {
+          padding: 0.5rem 1rem; } }
   .activities-container .card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1rem;
+    margin: 0;
+    padding: 2rem; }
     .activities-container .card-container .card {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 22rem;
       align-self: stretch;
-      margin: 0.5rem 1rem; }
+      border: none; }
+      @media (max-width: 720px) {
+        .activities-container .card-container .card {
+          width: 90vw;
+          margin: 0;
+          padding: 0; } }
       .activities-container .card-container .card .card__image {
         width: 10rem;
         height: 10rem;
         object-fit: cover;
         border-radius: 50%;
-        position: relative;
-        bottom: -2.5rem;
+        transform: translateY(2.2rem);
         border: 0.7rem solid white;
         z-index: 0; }
       .activities-container .card-container .card .card__content {
         background-color: #F4F5FF;
-        padding: 2rem;
+        padding: 3rem 2rem;
         border-radius: 20px;
         height: 35rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around; }
+        @media (max-width: 720px) {
+          .activities-container .card-container .card .card__content {
+            height: initial;
+            padding: 2rem 1rem; } }
         .activities-container .card-container .card .card__content .card__content--title {
           font-size: 2rem;
           color: #424475; }
@@ -237,55 +275,68 @@ footer {
             width: 5px; }
           .activities-container .card-container .card .card__content .card__content--text::-webkit-scrollbar-thumb {
             background-color: #424475; }
+          @media (max-width: 600px) {
+            .activities-container .card-container .card .card__content .card__content--text {
+              height: initial; } }
         .activities-container .card-container .card .card__content .card__content--button {
+          display: block;
+          text-align: center;
           background-color: #424475;
           color: white;
           text-decoration: none;
-          margin: 2rem 1rem;
-          padding: 0.5rem 1.8rem;
+          padding: 0.5rem 0;
           border-radius: 20px; }
 
 .contact-container {
-  height: 100vh;
-  padding-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .contact-container .form-container {
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80vw;
-    height: 80vh; }
-    .contact-container .form-container .form {
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+  @media (max-width: 1240px) {
+    .contact-container {
+      padding-top: 6rem;
+      padding-bottom: 0; } }
+  .contact-container .row {
+    --bs-gutter-x: 2rem;
+    margin: 0; }
+    .contact-container .row .form {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      padding: 2rem;
+      padding: 3rem;
       background-color: #F4F5FF;
-      border-radius: 20px; }
-      .contact-container .form-container .form .form__title {
+      border-radius: 20px;
+      border: none; }
+      .contact-container .row .form .form__title {
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 12px; }
-      .contact-container .form-container .form .form__subtitle {
-        font-size: 36px; }
-      .contact-container .form-container .form .form__div {
+      .contact-container .row .form .form__subtitle {
+        font-size: 2rem; }
+      .contact-container .row .form .form__div {
         display: flex;
         flex-direction: column;
-        height: 70%;
         justify-content: space-evenly; }
-        .contact-container .form-container .form .form__div input[type="text"] {
+        .contact-container .row .form .form__div input[type="text"] {
           border: none;
           border-bottom: 2px solid #424475;
           background-color: transparent;
-          padding: 0.2rem; }
-        .contact-container .form-container .form .form__div input[type="text"]:focus {
+          padding: 0.2rem;
+          margin-bottom: 1rem; }
+          .contact-container .row .form .form__div input[type="text"]::placeholder {
+            color: #424475; }
+        .contact-container .row .form .form__div input[type="text"]:focus {
           background-color: #dbdbe7;
           outline: none; }
-        .contact-container .form-container .form .form__div input[type="submit"] {
+        .contact-container .row .form .form__div textarea {
+          border: none;
+          border-bottom: 2px solid #424475;
+          background-color: transparent;
+          padding: 0.2rem;
+          margin-bottom: 1rem;
+          color: #424475; }
+          .contact-container .row .form .form__div textarea:focus {
+            background-color: #dbdbe7;
+            outline: none; }
+        .contact-container .row .form .form__div input[type="submit"] {
           background-color: #dbdbe7;
           outline: none;
           padding: 0.5rem;
@@ -297,14 +348,37 @@ footer {
           font-weight: bold;
           font-family: "Nunito", sans-serif;
           letter-spacing: 2px; }
-        .contact-container .form-container .form .form__div input[type="submit"]:hover {
+        .contact-container .row .form .form__div input[type="submit"]:hover {
           background-color: #424475;
           padding: 0.5rem;
           color: white; }
-        .contact-container .form-container .form .form__div input[type="submit"]:focus {
+        .contact-container .row .form .form__div input[type="submit"]:focus {
           background-color: #424475;
           box-shadow: inset 19px 19px 38px #383a63, inset -19px -19px 38px #4c4e87;
           color: white; }
+    .contact-container .row .social {
+      padding: 1.5rem; }
+      @media (max-width: 1240px) {
+        .contact-container .row .social {
+          height: 25rem; } }
+      .contact-container .row .social .social__container {
+        width: 100%;
+        height: 100%; }
+        .contact-container .row .social .social__container .social__container--video {
+          width: 100%;
+          height: 80%; }
+        .contact-container .row .social .social__container .social__container--links {
+          height: 20%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center; }
+          .contact-container .row .social .social__container .social__container--links a {
+            text-decoration: none; }
+            .contact-container .row .social .social__container .social__container--links a .bi {
+              color: #424475;
+              height: 2.5rem;
+              width: 2.5rem; }
 
 body {
   background-color: #ffffff; }
@@ -313,7 +387,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(img/ashramPhoto.jpg);
+  background-image: url(../../img/ashramPhoto.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,29 +1,26 @@
 @import "../colors";
 
 .contact-container {
-    height: 100vh;
-    padding-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 
-    .form-container {
-        padding: 2rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 80vw;
-        height: 80vh;
+    @media (max-width: 1240px) {
+        padding-top: 6rem;
+        padding-bottom: 0;
+    }
 
+    .row {
+        --bs-gutter-x: 2rem;
+        margin: 0;
 
         .form {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            padding: 2rem;
+            padding: 3rem;
             background-color: $primary-color-light;
             border-radius: 20px;
+            border: none;
 
             .form__title {
                 text-transform: uppercase;
@@ -32,13 +29,12 @@
             }
 
             .form__subtitle {
-                font-size: 36px;
+                font-size: 2rem;
             }
 
             .form__div {
                 display: flex;
                 flex-direction: column;
-                height: 70%;
                 justify-content: space-evenly;
 
                 input[type="text"] {
@@ -46,11 +42,30 @@
                     border-bottom: 2px solid #424475;
                     background-color: transparent;
                     padding: 0.2rem;
+                    margin-bottom: 1rem;
+
+                    &::placeholder {
+                        color: $primary-color-dark;
+                    }
                 }
 
                 input[type="text"]:focus {
                     background-color: #dbdbe7;
                     outline: none;
+                }
+
+                textarea {
+                    border: none;
+                    border-bottom: 2px solid #424475;
+                    background-color: transparent;
+                    padding: 0.2rem;
+                    margin-bottom: 1rem;
+                    color: $primary-color-dark;
+
+                    &:focus {
+                        background-color: #dbdbe7;
+                        outline: none;
+                    }
                 }
 
                 input[type="submit"] {
@@ -80,6 +95,39 @@
                 }
             }
         }
+
+        .social {
+            padding: 1.5rem;
+
+            @media (max-width: 1240px) {
+                height: 25rem;
+            }
+            .social__container {
+                width: 100%;
+                height: 100%;
+
+                .social__container--video {
+                    width: 100%;
+                    height: 80%;
+                }
+
+                .social__container--links {
+                    height: 20%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    a {
+                        text-decoration: none;
+                        .bi {
+                            color: $primary-color-dark;
+                            height: 2.5rem;
+                            width: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-

@@ -2,51 +2,76 @@
 
 .activities-container {
     background-color: white;
-    padding: 10rem 5rem;
+    padding: 10rem 1rem;
 
-    .activities-title {
-        font-size: 2.5rem;
-        color: $secondary-color;
-        background-color: $secondary-color-light;
-        padding: 1rem;
-        border-radius: 20px;
+    @media (max-width: 600px) {
+        padding: 5rem 0;
+    }
+
+    .row {
+        margin: 0;
+        width: 100%;
+
+        .activities-title {
+            display: block;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            padding: 0.5rem;
+            color: white;
+            background-color: $primary-color-dark;
+            line-height: 1.5rem;
+
+            @media (max-width: 720px) {
+                padding: 0.5rem 1rem;
+            }
+        }
     }
 
     .card-container {
-
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 1rem;
+        margin: 0;
+        padding: 2rem;
 
         .card {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 22rem;
             align-self: stretch;
-            margin: 0.5rem 1rem;
+            border: none;
+
+            @media (max-width: 720px) {
+                width: 90vw;
+                margin: 0;
+                padding: 0;
+            }
 
             .card__image {
                 width: 10rem;
                 height: 10rem;
                 object-fit: cover;
                 border-radius: 50%;
-                position: relative;
-                bottom: -2.5rem;
+                transform: translateY(2.2rem);
                 border: 0.7rem solid white;
                 z-index: 0;
             }
 
             .card__content {
                 background-color: $primary-color-light;
-                padding: 2rem;
+                padding: 3rem 2rem;
                 border-radius: 20px;
                 height: 35rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
+
+                @media (max-width: 720px) {
+                    height: initial;
+                    padding: 2rem 1rem;
+                }
 
                 .card__content--title {
                     font-size: 2rem;
@@ -64,22 +89,27 @@
                     padding-right: 0.5rem;
                     height: 80%;
                     overflow-y: auto;
-                    
+
                     &::-webkit-scrollbar {
                         width: 5px;
                     }
-                    
+
                     &::-webkit-scrollbar-thumb {
                         background-color: $primary-color-dark;
+                    }
+
+                    @media (max-width: 600px) {
+                        height: initial;
                     }
                 }
 
                 .card__content--button {
+                    display: block;
+                    text-align: center;
                     background-color: $primary-color-dark;
                     color: white;
                     text-decoration: none;
-                    margin: 2rem 1rem;
-                    padding: 0.5rem 1.8rem;
+                    padding: 0.5rem 0;
                     border-radius: 20px;
                 }
             }

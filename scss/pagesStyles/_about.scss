@@ -17,13 +17,38 @@
             height: 15rem;
             object-fit: cover;
             border-radius: 50%;
-            position: relative;
-            bottom: -5rem;
+            transform: translateY(4rem);
             border: 1rem solid white;
             z-index: 0;
+            
+            @media (max-width: 1240px) {
+                width: 12rem;
+                height: 12em;
+                transform: translateY(3rem);
+                border: 0.8rem solid white;
+
+            }
+
+            @media (max-width: 720px) {
+                width: 10rem;
+                height: 10em;
+                transform: translateY(2rem);
+                border: 0.6rem solid white;
+
+            }
         }
 
         .about__content {
+
+            @media (max-width: 1240px) {
+                padding-top: 4rem;
+
+            }
+
+            @media (max-width: 720px) {
+                padding-top: 3rem;
+
+            }
 
             background-color: $primary-color-light;
             padding: 5%;
