@@ -76,6 +76,7 @@
                 .card__content--title {
                     font-size: 2rem;
                     color: $primary-color-dark;
+                    align-self: center;
                 }
 
                 .card__content--subtitle {
@@ -89,6 +90,7 @@
                     padding-right: 0.5rem;
                     height: 80%;
                     overflow-y: auto;
+                    text-align: justify;
 
                     &::-webkit-scrollbar {
                         width: 5px;
