@@ -74,15 +74,18 @@
                 }
 
                 .card__content--title {
+                    text-align: center;
                     font-size: 2rem;
                     color: $primary-color-dark;
                     align-self: center;
                 }
 
                 .card__content--subtitle {
+                    text-align: center;
                     font-size: 1.2rem;
                     color: $primary-color-dark;
                     margin-top: 1rem;
+                    align-self: center;
                 }
 
                 .card__content--text {
