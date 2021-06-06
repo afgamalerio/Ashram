@@ -436,10 +436,10 @@ body {
   padding: 8rem;
   width: 100%;
   background: linear-gradient(180deg, rgba(147, 150, 203, 0.2) 0%, white 10%); }
-  @media (max-width: 600px) {
+  @media (max-width: 720px) {
     .presentation {
       padding: 3em 2rem;
-      font-size: 14px; } }
+      font-size: 16px; } }
   .presentation .presentation__logo {
     width: 7em;
     height: 7em;
@@ -448,7 +448,7 @@ body {
   .presentation .presentation__title {
     color: #424475;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     margin-bottom: 1em; }
   .presentation .presentation__description {
     text-align: center;
