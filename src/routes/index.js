@@ -4,7 +4,7 @@ const { config } = require('../config/index')
 const nodemailer = require('nodemailer')
 
 router.post('/send-email', async (req, res) => {
-  const { name, email, textArea } = req.body
+  const { name, email, textarea } = req.body
 
   try {
     const transporter = nodemailer.createTransport({
@@ -22,9 +22,9 @@ router.post('/send-email', async (req, res) => {
 
     var mailOptionsToMy = {
       from: `Ashram ${config.email}`,
-      to: 'ashram@gmail.com',
+      to: config.email,
       subject: `Nuevo Comentario de ${name} ${email}`,
-      text: textArea
+      text: textarea
     };
 
     var mailOptionsToUser = {

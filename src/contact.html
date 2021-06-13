@@ -195,12 +195,12 @@
     async function handleForm(event) {
       event.preventDefault()
 
-      const res = await $.ajax({
+      await $.ajax({
         url: '/send-email',
         type: 'post',
         data: $('#form').serialize()
       })
-      console.log(res)
+      alert('Mensaje enviado, Muchas gracias')
       //window.location.replace(res.url)
     }
   </script>
